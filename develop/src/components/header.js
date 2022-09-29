@@ -1,10 +1,28 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import Nav from "./nav";
+import React, { useState } from 'react';
 
-function Header(props){
+function Header() {
 
+    const [categories] = useState([
+        { name: 'Home', description:'The about page with navigation'},
+        { name: 'Portfolio', description:'Projects with links and images' },
+        { name: 'Resume', description:'Just a page with resume' },
+        { name: 'Contact', description:'A contact form to reach me through' },
+    ]);
+
+    const [currentPage, handlePageChange, setCurrentPage] = useState(categories[0]);
+
+    return (
+        <div>
+            <Nav
+                currentPage={currentPage}
+                handlePageChange={handlePageChange}
+                categories={categories}
+                setCurrentPage={setCurrentPage}
+            ></Nav>
+        </div>
+
+    );
 };
 
 export default Header;

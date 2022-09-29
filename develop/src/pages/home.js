@@ -1,7 +1,7 @@
 import React from 'react';
   
 //this is the home and about page in one
-const Home = () => {
+const Home = (currentCategory, setCurrentCategory) => {
   return (
     <div
       style={{
@@ -11,7 +11,6 @@ const Home = () => {
         height: '100vh'
       }}
     >
-      <h1>Welcome to GeeksforGeeks</h1>
     </div>
   );
 };

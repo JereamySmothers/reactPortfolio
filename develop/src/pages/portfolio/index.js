@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Projects from "../Projects";
+import Projects from "./projects";
 
-function Portfolio(){
+function Portfolio(currentCategory, setCurrentCategory){
     const [projects] = useState([
 
         {
@@ -41,7 +41,7 @@ function Portfolio(){
                 </ul>
             </div>
         </section>
-    )
+    );
 }
 
 export default Portfolio;
