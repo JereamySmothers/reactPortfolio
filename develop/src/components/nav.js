@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
-import { capitalizeFirstLetter } from './utils/helpers';
 // import '../assets/styles/style';
 
-function Nav( currentPage, handlePageChange) {
+function Nav( currentPage, handlePageChange, setCurrentPage) {
 
   return (
 
@@ -15,16 +14,16 @@ function Nav( currentPage, handlePageChange) {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#" onClick={() => handlePageChange("Home")}>Home</a>
+                <a className="nav-link active" aria-current="page" href="#Home" onClick={() => handlePageChange("Home")}>Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#" onClick={() => handlePageChange("Portfolio")}>Projects</a>
+                <a className="nav-link" href="#Portfolio" onClick={() => handlePageChange("Portfolio")}>Projects</a>
               </li>
+              {/* <li className="nav-item">
+                <a className="nav-link" href="#Resume" onClick={() => handlePageChange("Resume")}>Resume</a>
+              </li> */}
               <li className="nav-item">
-                <a className="nav-link" href="#" onClick={() => handlePageChange("Resume")}>Resume</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#" onClick={() => handlePageChange("Contact")}>Contact</a>
+                <a className="nav-link" href="#Contact" onClick={() => handlePageChange("Contact")}>Contact</a>
               </li>
             </ul>
           </div>

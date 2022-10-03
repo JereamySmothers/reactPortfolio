@@ -6,7 +6,7 @@ function Header() {
     const [categories] = useState([
         { name: 'Home', description:'The about page with navigation'},
         { name: 'Portfolio', description:'Projects with links and images' },
-        { name: 'Resume', description:'Just a page with resume' },
+        // { name: 'Resume', description:'Just a page with resume' },
         { name: 'Contact', description:'A contact form to reach me through' },
     ]);
 
@@ -20,6 +20,7 @@ function Header() {
                 categories={categories}
                 setCurrentPage={setCurrentPage}
             ></Nav>
+            
         </div>
 
     );
