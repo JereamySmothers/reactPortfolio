@@ -12,7 +12,7 @@ import Footer from "./components/footer";
 
 function App() {
 
-  const [currentPage, handlePageChange, setCurrentPage] = useState(categories[0]);
+  const [currentPage, handlePageChange, setCurrentPage] = useState([0]);
 
   const renderPage = () => {
     if (currentPage === 'Home') {

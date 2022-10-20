@@ -7,26 +7,26 @@ function Portfolio(currentCategory, setCurrentCategory){
         {
             name:'Note Taker',
             url:'https://jereamysmothers.github.io/noteTaker/',
-            img:require('')
+            // img:require('')
         },{
             name:'Social Networking API',
             url:'https://jereamysmothers.github.io/socialNetworkAPI/',
-            img:require('')
+            // img:require('')
         },{
             name:'Tech Blogs',
             url:'https://jereamysmothers.github.io/techBlogs/',
-            img:require('')
+            // img:require('')
         },{
             name:'Project Green Room',
             url:'https://young-dusk-65986.herokuapp.com/',
-            img:require('')
+            // img:require('')
         },
-        //project 3
-        // {
-        //     name:'',
-        //     url:'',
-        //     img:require('')
-        // }
+        
+        {
+            name:'The Final Commit',
+            // url:'',
+            // img:require('')
+        }
 
     ]);
 
